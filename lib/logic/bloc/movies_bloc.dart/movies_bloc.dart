@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:tvoe_kino/logic/bloc/movies_bloc.dart/movies_event.dart';
 import 'package:tvoe_kino/logic/bloc/movies_bloc.dart/movies_state.dart';
-import 'package:tvoe_kino/services/song_detail/song_service.dart';
+import 'package:tvoe_kino/services/movie_repository/movie_repository.dart';
 
 class MoviesBloc extends Bloc<MoviesEvent, MoviesState> {
   final MoviesRepository repository;

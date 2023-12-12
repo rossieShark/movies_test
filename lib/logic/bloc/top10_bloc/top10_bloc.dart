@@ -2,7 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:tvoe_kino/logic/bloc/top10_bloc/top10_event.dart';
 import 'package:tvoe_kino/logic/bloc/top10_bloc/top10_state.dart';
-import 'package:tvoe_kino/services/song_detail/song_service.dart';
+import 'package:tvoe_kino/services/movie_repository/movie_repository.dart';
 
 class Top10Bloc extends Bloc<Top10Event, Top10State> {
   final MoviesRepository repository;
