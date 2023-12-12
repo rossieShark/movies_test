@@ -57,7 +57,7 @@ class GradientContainer extends StatelessWidget {
                 fontSize: MyPlatform.isTv ? fontSize : fontSize / 2,
                 fontWeight: FontWeight.w500,
                 height: 0,
-                color: Color(0xFFFFFFFF),
+                color: const Color(0xFFFFFFFF),
               )),
         ));
   }

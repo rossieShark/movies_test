@@ -7,6 +7,6 @@ class NoResultWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text('No Results'));
+    return const Center(child: Text('No Results'));
   }
 }

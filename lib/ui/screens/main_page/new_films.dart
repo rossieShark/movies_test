@@ -17,6 +17,7 @@ class NewFilms extends StatefulWidget {
 }
 
 class _NewFilmsState extends State<NewFilms> {
+  @override
   void initState() {
     super.initState();
     _fetchAlbumDetails();
@@ -24,14 +25,14 @@ class _NewFilmsState extends State<NewFilms> {
 
   void _fetchAlbumDetails() {
     BlocProvider.of<MoviesBloc>(context).add(
-      FetchNewFilmsEvent(),
+      const FetchNewFilmsEvent(),
     );
   }
 
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<MoviesBloc, MoviesState>(builder: (context, state) {
-      return Container(
+      return SizedBox(
         height: MyPlatform.isTv ? 653 : 653 / 2,
         child: state.map(
           loading: (_) => const Center(child: CustomFadingCircleIndicator()),
@@ -47,7 +48,6 @@ class _NewFilmsState extends State<NewFilms> {
 
 class _MoviesListView extends StatelessWidget {
   const _MoviesListView({
-    super.key,
     required this.movies,
   });
   final List<MovieModel?> movies;

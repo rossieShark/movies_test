@@ -5,7 +5,8 @@ class GradientTextOutline extends StatelessWidget {
   final double fontSize;
   final List<Color> gradientColors;
 
-  GradientTextOutline({
+  const GradientTextOutline({
+    super.key,
     required this.text,
     required this.fontSize,
     required this.gradientColors,

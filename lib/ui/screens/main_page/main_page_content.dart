@@ -21,7 +21,7 @@ class MainPageContent extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Container(
+            SizedBox(
               height: MyPlatform.isTv ? 228 : 228 / 2,
               width: MyPlatform.isTv ? 576 : 576 / 2,
               child: Image.asset(AppImages.posterName),
@@ -29,7 +29,7 @@ class MainPageContent extends StatelessWidget {
             SizedBox(
               height: MyPlatform.isTv ? 36 : 36 / 2,
             ),
-            Container(
+            SizedBox(
               width: MyPlatform.isTv ? 886 : 886 / 2,
               child: Text(
                   'Неувядающий авантюрист и пытливый археолог-исследователь по‑прежнему в седле.',

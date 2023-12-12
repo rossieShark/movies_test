@@ -16,8 +16,8 @@ class TabBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<TabBarBloc, int>(builder: (context, tabIndex) {
       return NavigationRailWidget(
-        child: child,
         tabIndex: tabIndex,
+        child: child,
       );
     });
   }
@@ -36,10 +36,10 @@ class NavigationRailWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF09090C),
+      backgroundColor: const Color(0xFF09090C),
       body: Row(
         children: [
-          Container(
+          SizedBox(
             height: MediaQuery.of(context).size.height,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -47,7 +47,7 @@ class NavigationRailWidget extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.fromLTRB(MyPlatform.isTv ? 64 : 64 / 2,
                       MyPlatform.isTv ? 40 : 40 / 2, 0, 0),
-                  child: Container(
+                  child: SizedBox(
                     width: MyPlatform.isTv ? 144 : 144 / 2,
                     height: MyPlatform.isTv ? 50 : 50 / 2,
                     child: Image.asset(
@@ -57,7 +57,7 @@ class NavigationRailWidget extends StatelessWidget {
                 SizedBox(
                   height: MyPlatform.isTv ? 110 : 110 / 2,
                 ),
-                Container(
+                SizedBox(
                   height: MediaQuery.of(context).size.height -
                       50 / 2 -
                       64 / 2 -
@@ -67,9 +67,11 @@ class NavigationRailWidget extends StatelessWidget {
                         left: MyPlatform.isTv ? 55 : 55 / 2 - 25),
                     child: NavigationRail(
                       useIndicator: false,
-                      backgroundColor: Color(0xFF09090C),
-                      selectedIconTheme: IconThemeData(color: Colors.white),
-                      unselectedIconTheme: IconThemeData(color: Colors.white),
+                      backgroundColor: const Color(0xFF09090C),
+                      selectedIconTheme:
+                          const IconThemeData(color: Colors.white),
+                      unselectedIconTheme:
+                          const IconThemeData(color: Colors.white),
                       selectedIndex: tabIndex,
                       onDestinationSelected: (int index) {
                         NavigationUtils.handleTabTap(context, index);
@@ -105,12 +107,12 @@ List<NavigationRailDestination> railDestinations =
   String image = entry.value;
 
   return NavigationRailDestination(
-    icon: Container(
+    icon: SizedBox(
       width: MyPlatform.isTv ? 44 : 44 / 2,
       height: MyPlatform.isTv ? 44 : 44 / 2,
       child: Image.asset(image, fit: BoxFit.cover),
     ),
-    label: Text(""),
+    label: const Text(""),
   );
 }).toList();
 

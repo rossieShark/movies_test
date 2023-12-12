@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:tvoe_kino/models/movie_model.dart';
-import 'package:tvoe_kino/resources/resources.dart';
 import 'package:tvoe_kino/ui/widgets/custom_button.dart';
 import 'package:tvoe_kino/ui/widgets/platform.dart';
 

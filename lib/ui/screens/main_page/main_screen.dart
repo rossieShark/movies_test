@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tvoe_kino/resources/resources.dart';
 import 'package:tvoe_kino/ui/screens/main_page/main_page_content.dart';
-import 'package:tvoe_kino/ui/widgets/custom_button.dart';
+
 import 'package:tvoe_kino/ui/widgets/platform.dart';
 
 class MainScreen extends StatefulWidget {
@@ -42,9 +42,7 @@ class _MainScreenState extends State<MainScreen> {
 }
 
 class _BackgroundImage extends StatelessWidget {
-  const _BackgroundImage({
-    super.key,
-  });
+  const _BackgroundImage();
 
   @override
   Widget build(BuildContext context) {
