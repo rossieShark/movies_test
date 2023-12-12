@@ -1,0 +1,52 @@
+{
+	"movies": [
+	{
+	"title": "Синий жук",
+	"image": "https://upload.wikimedia.org/wikipedia/ru/d/dc/Blue_Beetle_%28film%29.jpg",
+	"raiting": "10.0",
+	"isWatched": false,
+	"category": "Новинки",
+	"genre": 
+	["Приключения",
+	"Боевик"],
+	"watchedDate": null
+
+	},
+	{
+	"title": "Домашняя игра",
+	"image": "https://upload.wikimedia.org/wikipedia/ru/b/b9/Home_Team_%28film%2C_2022%29.jpg",
+	"raiting": "6.9",
+	"isWatched": false,
+	"category": "Новинки",
+	"genre": 
+	["Комедия",
+	"Драма"],
+	"watchedDate": null
+
+	},
+	{
+	"title": "Салют 7",
+	"image": "https://upload.wikimedia.org/wikipedia/ru/2/2e/Салют_7_кино.jpg",
+	"raiting": "5.8",
+	"isWatched": false,
+	"category": "Новинки",
+	"genre": 
+	["Приключения",
+	"Боевик"],
+	"watchedDate": null
+
+	},
+	{
+	"title": "Поймай меня, если сможешь",
+	"image": "https://upload.wikimedia.org/wikipedia/ru/7/7c/Catch_Me_if_You_Can_%282002%29.jpg",
+	"raiting": "7.0",
+	"isWatched": false,
+	"category": "Новинки",
+	"genre": 
+	["Драма",
+	"Криминал"],
+	"watchedDate": null
+
+	}
+	]
+}
