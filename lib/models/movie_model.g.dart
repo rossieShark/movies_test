@@ -23,6 +23,7 @@ _$MovieModelImpl _$$MovieModelImplFromJson(Map<String, dynamic> json) =>
       title: json['title'] as String,
       image: json['image'] as String,
       raiting: json['raiting'] as String,
+      category: json['category'] as String,
       isWatched: json['isWatched'] as bool,
       genre: (json['genre'] as List<dynamic>).map((e) => e as String).toList(),
       wachedDate: json['wachedDate'] == null
@@ -35,6 +36,7 @@ Map<String, dynamic> _$$MovieModelImplToJson(_$MovieModelImpl instance) =>
       'title': instance.title,
       'image': instance.image,
       'raiting': instance.raiting,
+      'category': instance.category,
       'isWatched': instance.isWatched,
       'genre': instance.genre,
       'wachedDate': instance.wachedDate?.toIso8601String(),

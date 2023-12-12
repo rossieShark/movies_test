@@ -6,10 +6,24 @@ part of 'movies_event.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$FetchMoviesEventImpl _$$FetchMoviesEventImplFromJson(
+_$FetchNewFilmsEventImpl _$$FetchNewFilmsEventImplFromJson(
         Map<String, dynamic> json) =>
-    _$FetchMoviesEventImpl();
+    _$FetchNewFilmsEventImpl(
+      $type: json['runtimeType'] as String?,
+    );
 
-Map<String, dynamic> _$$FetchMoviesEventImplToJson(
-        _$FetchMoviesEventImpl instance) =>
-    <String, dynamic>{};
+Map<String, dynamic> _$$FetchNewFilmsEventImplToJson(
+        _$FetchNewFilmsEventImpl instance) =>
+    <String, dynamic>{
+      'runtimeType': instance.$type,
+    };
+
+_$FetchTop10Impl _$$FetchTop10ImplFromJson(Map<String, dynamic> json) =>
+    _$FetchTop10Impl(
+      $type: json['runtimeType'] as String?,
+    );
+
+Map<String, dynamic> _$$FetchTop10ImplToJson(_$FetchTop10Impl instance) =>
+    <String, dynamic>{
+      'runtimeType': instance.$type,
+    };

@@ -24,7 +24,7 @@ class _NewFilmsState extends State<NewFilms> {
 
   void _fetchAlbumDetails() {
     BlocProvider.of<MoviesBloc>(context).add(
-      FetchMoviesEvent(),
+      FetchNewFilmsEvent(),
     );
   }
 

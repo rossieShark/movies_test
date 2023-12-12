@@ -4,8 +4,8 @@ part 'movies_event.g.dart';
 
 @freezed
 class MoviesEvent with _$MoviesEvent {
-  const factory MoviesEvent.loadMovies() = FetchMoviesEvent;
-
+  const factory MoviesEvent.loadNewFilms() = FetchNewFilmsEvent;
+  const factory MoviesEvent.loadTop10() = FetchTop10;
   factory MoviesEvent.fromJson(Map<String, Object?> json) =>
       _$MoviesEventFromJson(json);
 }

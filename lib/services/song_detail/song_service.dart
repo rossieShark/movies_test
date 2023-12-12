@@ -13,15 +13,15 @@ class MoviesRepository {
     return response.movies;
   }
 
-  Future<List<MovieModel>> returnMoviesWithGenre(String genre) async {
+  Future<List<MovieModel>> returnMoviesWithCategory(String category) async {
     final movies = await getMoviesList();
-    final List<MovieModel> genresMovie = [];
-    movies.map((movie) => movie.genre.map((genres) {
-          if (genres == genre) {
-            genresMovie.add(movie);
-          }
-        }));
-    return genresMovie;
+    final List<MovieModel> categoryMovies = [];
+    movies.map((movie) {
+      if (movie.category == category) {
+        categoryMovies.add(movie);
+      }
+    });
+    return categoryMovies;
   }
 
   Future<List<MovieModel>> recentlyWatched() async {

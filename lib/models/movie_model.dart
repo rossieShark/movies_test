@@ -18,6 +18,7 @@ class MovieModel with _$MovieModel {
       {required String title,
       required String image,
       required String raiting,
+      required String category,
       required bool isWatched,
       required List<String> genre,
       required DateTime? wachedDate}) = _MovieModel;

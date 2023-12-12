@@ -167,6 +167,7 @@ mixin _$MovieModel {
   String get title => throw _privateConstructorUsedError;
   String get image => throw _privateConstructorUsedError;
   String get raiting => throw _privateConstructorUsedError;
+  String get category => throw _privateConstructorUsedError;
   bool get isWatched => throw _privateConstructorUsedError;
   List<String> get genre => throw _privateConstructorUsedError;
   DateTime? get wachedDate => throw _privateConstructorUsedError;
@@ -187,6 +188,7 @@ abstract class $MovieModelCopyWith<$Res> {
       {String title,
       String image,
       String raiting,
+      String category,
       bool isWatched,
       List<String> genre,
       DateTime? wachedDate});
@@ -208,6 +210,7 @@ class _$MovieModelCopyWithImpl<$Res, $Val extends MovieModel>
     Object? title = null,
     Object? image = null,
     Object? raiting = null,
+    Object? category = null,
     Object? isWatched = null,
     Object? genre = null,
     Object? wachedDate = freezed,
@@ -224,6 +227,10 @@ class _$MovieModelCopyWithImpl<$Res, $Val extends MovieModel>
       raiting: null == raiting
           ? _value.raiting
           : raiting // ignore: cast_nullable_to_non_nullable
+              as String,
+      category: null == category
+          ? _value.category
+          : category // ignore: cast_nullable_to_non_nullable
               as String,
       isWatched: null == isWatched
           ? _value.isWatched
@@ -253,6 +260,7 @@ abstract class _$$MovieModelImplCopyWith<$Res>
       {String title,
       String image,
       String raiting,
+      String category,
       bool isWatched,
       List<String> genre,
       DateTime? wachedDate});
@@ -272,6 +280,7 @@ class __$$MovieModelImplCopyWithImpl<$Res>
     Object? title = null,
     Object? image = null,
     Object? raiting = null,
+    Object? category = null,
     Object? isWatched = null,
     Object? genre = null,
     Object? wachedDate = freezed,
@@ -288,6 +297,10 @@ class __$$MovieModelImplCopyWithImpl<$Res>
       raiting: null == raiting
           ? _value.raiting
           : raiting // ignore: cast_nullable_to_non_nullable
+              as String,
+      category: null == category
+          ? _value.category
+          : category // ignore: cast_nullable_to_non_nullable
               as String,
       isWatched: null == isWatched
           ? _value.isWatched
@@ -312,6 +325,7 @@ class _$MovieModelImpl implements _MovieModel {
       {required this.title,
       required this.image,
       required this.raiting,
+      required this.category,
       required this.isWatched,
       required final List<String> genre,
       required this.wachedDate})
@@ -327,6 +341,8 @@ class _$MovieModelImpl implements _MovieModel {
   @override
   final String raiting;
   @override
+  final String category;
+  @override
   final bool isWatched;
   final List<String> _genre;
   @override
@@ -341,7 +357,7 @@ class _$MovieModelImpl implements _MovieModel {
 
   @override
   String toString() {
-    return 'MovieModel(title: $title, image: $image, raiting: $raiting, isWatched: $isWatched, genre: $genre, wachedDate: $wachedDate)';
+    return 'MovieModel(title: $title, image: $image, raiting: $raiting, category: $category, isWatched: $isWatched, genre: $genre, wachedDate: $wachedDate)';
   }
 
   @override
@@ -352,6 +368,8 @@ class _$MovieModelImpl implements _MovieModel {
             (identical(other.title, title) || other.title == title) &&
             (identical(other.image, image) || other.image == image) &&
             (identical(other.raiting, raiting) || other.raiting == raiting) &&
+            (identical(other.category, category) ||
+                other.category == category) &&
             (identical(other.isWatched, isWatched) ||
                 other.isWatched == isWatched) &&
             const DeepCollectionEquality().equals(other._genre, _genre) &&
@@ -361,8 +379,8 @@ class _$MovieModelImpl implements _MovieModel {
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, title, image, raiting, isWatched,
-      const DeepCollectionEquality().hash(_genre), wachedDate);
+  int get hashCode => Object.hash(runtimeType, title, image, raiting, category,
+      isWatched, const DeepCollectionEquality().hash(_genre), wachedDate);
 
   @JsonKey(ignore: true)
   @override
@@ -383,6 +401,7 @@ abstract class _MovieModel implements MovieModel {
       {required final String title,
       required final String image,
       required final String raiting,
+      required final String category,
       required final bool isWatched,
       required final List<String> genre,
       required final DateTime? wachedDate}) = _$MovieModelImpl;
@@ -396,6 +415,8 @@ abstract class _MovieModel implements MovieModel {
   String get image;
   @override
   String get raiting;
+  @override
+  String get category;
   @override
   bool get isWatched;
   @override
