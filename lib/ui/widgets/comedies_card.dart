@@ -4,8 +4,8 @@ import 'package:tvoe_kino/resources/resources.dart';
 import 'package:tvoe_kino/ui/widgets/custom_button.dart';
 import 'package:tvoe_kino/ui/widgets/platform.dart';
 
-class ComediesCard extends StatelessWidget {
-  const ComediesCard({
+class NewFilmsCard extends StatelessWidget {
+  const NewFilmsCard({
     super.key,
     required this.movie,
   });
@@ -37,7 +37,7 @@ class ComediesCard extends StatelessWidget {
                       child: GradientContainer(
                         title: movie?.raiting ?? '0.0',
                         fontSize: 28,
-                        width: 75,
+                        width: 88,
                         height: 48,
                         padding: EdgeInsets.symmetric(
                           vertical: MyPlatform.isTv ? 6 : 6 / 2,

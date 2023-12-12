@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
-import 'package:tvoe_kino/logic/bloc/movies_bloc.dart/movies_bloc.dart';
-import 'package:tvoe_kino/logic/bloc/movies_bloc.dart/movies_state.dart';
 import 'package:tvoe_kino/resources/resources.dart';
-import 'package:tvoe_kino/ui/screens/main_page/comedy_list_view.dart';
+import 'package:tvoe_kino/ui/screens/main_page/new_films.dart';
 import 'package:tvoe_kino/ui/screens/main_page/top_10_list_view.dart';
 import 'package:tvoe_kino/ui/widgets/custom_button.dart';
 import 'package:tvoe_kino/ui/widgets/platform.dart';
@@ -81,7 +78,7 @@ class MainPageContent extends StatelessWidget {
       SizedBox(
         height: MyPlatform.isTv ? 24 : 24 / 2,
       ),
-      ComedyListView(),
+      const NewFilms(),
       SizedBox(
         height: MyPlatform.isTv ? 110 : 110 / 2,
       ),
@@ -89,13 +86,13 @@ class MainPageContent extends StatelessWidget {
         children: [
           GradientText(
             "ТОП-10",
-            style: new TextStyle(
+            style: TextStyle(
               fontSize: MyPlatform.isTv ? 52 : 52 / 2,
               fontStyle: FontStyle.italic,
               fontFamily: 'TT Norms Pro',
               height: 0,
             ),
-            colors: <Color>[Color(0xFF6A11CB), Color(0xFF2575FC)],
+            colors: const <Color>[Color(0xFF6A11CB), Color(0xFF2575FC)],
           ),
           SizedBox(
             width: MyPlatform.isTv ? 20 : 20 / 2,
@@ -115,7 +112,7 @@ class MainPageContent extends StatelessWidget {
       SizedBox(
         width: MyPlatform.isTv ? 24 : 24 / 2,
       ),
-      Top10ListView()
+      const Top10ListView()
     ]);
   }
 }

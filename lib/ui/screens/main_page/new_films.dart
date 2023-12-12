@@ -9,14 +9,14 @@ import 'package:tvoe_kino/ui/widgets/fading_indicator.dart';
 import 'package:tvoe_kino/ui/widgets/no_results_widget.dart';
 import 'package:tvoe_kino/ui/widgets/platform.dart';
 
-class ComedyListView extends StatefulWidget {
-  const ComedyListView({super.key});
+class NewFilms extends StatefulWidget {
+  const NewFilms({super.key});
 
   @override
-  State<ComedyListView> createState() => _ComedyListViewState();
+  State<NewFilms> createState() => _NewFilmsState();
 }
 
-class _ComedyListViewState extends State<ComedyListView> {
+class _NewFilmsState extends State<NewFilms> {
   void initState() {
     super.initState();
     _fetchAlbumDetails();
@@ -59,7 +59,7 @@ class _MoviesListView extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       itemCount: movies.length,
       itemBuilder: (context, index) {
-        return ComediesCard(
+        return NewFilmsCard(
           movie: movies[index],
         );
       },
