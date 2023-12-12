@@ -8,7 +8,7 @@ part of 'movies_event.dart';
 
 _$FetchNewFilmsEventImpl _$$FetchNewFilmsEventImplFromJson(
         Map<String, dynamic> json) =>
-    _$FetchNewFilmsEventImpl();
+    const _$FetchNewFilmsEventImpl();
 
 Map<String, dynamic> _$$FetchNewFilmsEventImplToJson(
         _$FetchNewFilmsEventImpl instance) =>

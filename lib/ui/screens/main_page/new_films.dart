@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:tvoe_kino/domain/models/movie_model.dart';
 import 'package:tvoe_kino/logic/bloc/movies_bloc.dart/movies_bloc.dart';
 import 'package:tvoe_kino/logic/bloc/movies_bloc.dart/movies_event.dart';
 import 'package:tvoe_kino/logic/bloc/movies_bloc.dart/movies_state.dart';
-import 'package:tvoe_kino/models/movie_model.dart';
+
 import 'package:tvoe_kino/ui/widgets/new_films_card.dart';
 import 'package:tvoe_kino/ui/widgets/fading_indicator.dart';
 import 'package:tvoe_kino/ui/widgets/no_results_widget.dart';

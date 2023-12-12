@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:tvoe_kino/models/movie_model.dart';
-import 'package:tvoe_kino/services/service.dart';
+import 'package:tvoe_kino/domain/models/movie_model.dart';
+import 'package:tvoe_kino/domain/services/service.dart';
 
 class MoviesRepository {
   final MovieService _movieService = MovieService();

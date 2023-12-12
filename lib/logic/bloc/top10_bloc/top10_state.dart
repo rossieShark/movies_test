@@ -1,5 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:tvoe_kino/models/movie_model.dart';
+import 'package:tvoe_kino/domain/models/movie_model.dart';
+
 part 'top10_state.freezed.dart';
 part 'top10_state.g.dart';
 

@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:chopper/chopper.dart';
-import 'package:tvoe_kino/models/movie_model.dart';
+import 'package:tvoe_kino/domain/models/movie_model.dart';
 
 final Map<Type, Object Function(Map<String, dynamic>)> generatedMapping = {
   MovieResponse: MovieResponse.fromJsonFactory,

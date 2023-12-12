@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:tvoe_kino/logic/bloc/movies_bloc.dart/movies_bloc.dart';
-import 'package:tvoe_kino/logic/bloc/movies_bloc.dart/movies_event.dart';
-import 'package:tvoe_kino/logic/bloc/movies_bloc.dart/movies_state.dart';
+
 import 'package:tvoe_kino/logic/bloc/top10_bloc/top10_bloc.dart';
 import 'package:tvoe_kino/logic/bloc/top10_bloc/top10_event.dart';
 import 'package:tvoe_kino/logic/bloc/top10_bloc/top10_state.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:simple_gradient_text/simple_gradient_text.dart';
-import 'package:tvoe_kino/models/movie_model.dart';
+import 'package:tvoe_kino/domain/models/movie_model.dart';
 
 import 'package:tvoe_kino/ui/widgets/platform.dart';
 

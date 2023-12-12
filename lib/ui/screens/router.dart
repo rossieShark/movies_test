@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:tvoe_kino/logic/bloc/movies_bloc.dart/movies_bloc.dart';
 import 'package:tvoe_kino/logic/bloc/top10_bloc/top10_bloc.dart';
-import 'package:tvoe_kino/services/movie_repository/movie_repository.dart';
+import 'package:tvoe_kino/domain/reposotory/movie_repository/movie_repository.dart';
 import 'package:tvoe_kino/ui/screens/main_page/main_screen.dart';
 import 'package:tvoe_kino/ui/screens/navigation_rail.dart';
 

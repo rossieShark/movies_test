@@ -7,7 +7,7 @@ part of 'top10_event.dart';
 // **************************************************************************
 
 _$FetchTop10Impl _$$FetchTop10ImplFromJson(Map<String, dynamic> json) =>
-    _$FetchTop10Impl();
+    const _$FetchTop10Impl();
 
 Map<String, dynamic> _$$FetchTop10ImplToJson(_$FetchTop10Impl instance) =>
     <String, dynamic>{};
