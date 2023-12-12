@@ -7,10 +7,15 @@ class MoviesRepository {
   final MovieService _movieService = MovieService();
 
   Future<List<MovieModel>> _getMoviesList() async {
-    final moviesJson = await _movieService.getMovies();
-    final MovieResponse response = MovieResponse.fromJson(
-        Map<String, dynamic>.from(json.decode(moviesJson)));
-    return response.movies;
+    try {
+      final moviesJson = await _movieService.getMovies();
+      final MovieResponse response =
+          MovieResponse.fromJson(json.decode(moviesJson!));
+      return response.movies;
+    } catch (e) {
+      print('Repository error - $e');
+      return [];
+    }
   }
 
   Future<List<MovieModel>> returnMoviesWithCategory(String category) async {
