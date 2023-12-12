@@ -46,6 +46,73 @@
 	["Драма",
 	"Криминал"],
 	"watchedDate": null
+	},
+	{
+		"title": "Красное уведомление",
+		"image": "http://allofcinema.com/wp-content/uploads/2022/03/Luchshie-filmyi-v-retsenziya-Krasnoe-uvedomlenie-Red-Notice-2021.jpg",
+		"raiting": "6.5",
+		"isWatched": true,
+		"category": "Новинки",
+		"genre": 
+		["Боевик",
+		"Комедия"],
+		"watchedDate": null
+	},
+	{
+		"title": "Социальная сеть",
+		"image": "https://upload.wikimedia.org/wikipedia/ru/9/95/Социльная_сеть.jpg?20111124165250",
+		"raiting": "7.7",
+		"isWatched": true,
+		"category": "",
+		"genre": 
+		["Документальный",
+		"Драма"],
+		"watchedDate": null
+	},
+	{
+		"title": "Лео",
+		"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/10671298/6d480157-6a56-4394-a61c-64d04dcf4f60/600x900",
+		"raiting": "7.4",
+		"isWatched": true,
+		"category": "Новинки",
+		"genre": 
+		["Комедия",
+		"Мюзикл"],
+		"watchedDate": null
+		
+	},
+	{
+		"title": "Merry Little Batman",
+		"image": "https://m.media-amazon.com/images/M/MV5BZTRkNGYyZmItZTNlYy00MzgwLThhZTYtY2ZiOTZkNWU1YWYwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+		"raiting": "6.4",
+		"isWatched": false,
+		"category": "Новинки",
+		"genre": 
+		["Боевик",
+		"Комедия"],
+		"watchedDate": null
+	},
+	{
+		"title": "Сезон измен",
+		"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/119742f5-aca1-4127-ac79-f907fd4fe8e7/600x900",
+		"raiting": "6.2",
+		"isWatched": true,
+		"category": "",
+		"genre": 
+		["Романтика",
+		"Триллер"],
+		"watchedDate": null
+	},
+	{
+		"title": "Banksy",
+		"image": "https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/f4a90435-d93a-45cb-855e-fc2bbc8abb57/600x900",
+		"raiting": "7.8",
+		"isWatched": true,
+		"category": "",
+		"genre": 
+		["Документальный"],
+		"watchedDate": null
 	}
+		
 	]
 }
