@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
 import 'package:simple_gradient_text/simple_gradient_text.dart';
+import 'package:tvoe_kino/models/movie_model.dart';
 import 'package:tvoe_kino/resources/resources.dart';
 
 import 'package:tvoe_kino/ui/widgets/platform.dart';
 
 class Top10Card extends StatelessWidget {
-  const Top10Card({super.key, required this.index});
+  const Top10Card({super.key, required this.index, required this.movies});
+  final List<MovieModel?> movies;
   final int index;
   @override
   Widget build(BuildContext context) {
@@ -34,9 +36,10 @@ class Top10Card extends StatelessWidget {
           child: Container(
             width: MyPlatform.isTv ? 398 : 398 / 2,
             height: MyPlatform.isTv ? 597 : 587 / 2,
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(AppImages.top10),
+                image: NetworkImage(movies[index]?.image ??
+                    'https://reductor58.ru/local/templates/meven/img/no-photo.png'),
                 fit: BoxFit.fill,
               ),
             ),
