@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'movies_event.dart';
+part of 'top10_event.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,41 +14,41 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-MoviesEvent _$MoviesEventFromJson(Map<String, dynamic> json) {
-  return FetchNewFilmsEvent.fromJson(json);
+Top10Event _$Top10EventFromJson(Map<String, dynamic> json) {
+  return FetchTop10.fromJson(json);
 }
 
 /// @nodoc
-mixin _$MoviesEvent {
+mixin _$Top10Event {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() loadNewFilms,
+    required TResult Function() loadTop10,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? loadNewFilms,
+    TResult? Function()? loadTop10,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? loadNewFilms,
+    TResult Function()? loadTop10,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(FetchNewFilmsEvent value) loadNewFilms,
+    required TResult Function(FetchTop10 value) loadTop10,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FetchNewFilmsEvent value)? loadNewFilms,
+    TResult? Function(FetchTop10 value)? loadTop10,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FetchNewFilmsEvent value)? loadNewFilms,
+    TResult Function(FetchTop10 value)? loadTop10,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -56,16 +56,16 @@ mixin _$MoviesEvent {
 }
 
 /// @nodoc
-abstract class $MoviesEventCopyWith<$Res> {
-  factory $MoviesEventCopyWith(
-          MoviesEvent value, $Res Function(MoviesEvent) then) =
-      _$MoviesEventCopyWithImpl<$Res, MoviesEvent>;
+abstract class $Top10EventCopyWith<$Res> {
+  factory $Top10EventCopyWith(
+          Top10Event value, $Res Function(Top10Event) then) =
+      _$Top10EventCopyWithImpl<$Res, Top10Event>;
 }
 
 /// @nodoc
-class _$MoviesEventCopyWithImpl<$Res, $Val extends MoviesEvent>
-    implements $MoviesEventCopyWith<$Res> {
-  _$MoviesEventCopyWithImpl(this._value, this._then);
+class _$Top10EventCopyWithImpl<$Res, $Val extends Top10Event>
+    implements $Top10EventCopyWith<$Res> {
+  _$Top10EventCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -74,38 +74,38 @@ class _$MoviesEventCopyWithImpl<$Res, $Val extends MoviesEvent>
 }
 
 /// @nodoc
-abstract class _$$FetchNewFilmsEventImplCopyWith<$Res> {
-  factory _$$FetchNewFilmsEventImplCopyWith(_$FetchNewFilmsEventImpl value,
-          $Res Function(_$FetchNewFilmsEventImpl) then) =
-      __$$FetchNewFilmsEventImplCopyWithImpl<$Res>;
+abstract class _$$FetchTop10ImplCopyWith<$Res> {
+  factory _$$FetchTop10ImplCopyWith(
+          _$FetchTop10Impl value, $Res Function(_$FetchTop10Impl) then) =
+      __$$FetchTop10ImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$FetchNewFilmsEventImplCopyWithImpl<$Res>
-    extends _$MoviesEventCopyWithImpl<$Res, _$FetchNewFilmsEventImpl>
-    implements _$$FetchNewFilmsEventImplCopyWith<$Res> {
-  __$$FetchNewFilmsEventImplCopyWithImpl(_$FetchNewFilmsEventImpl _value,
-      $Res Function(_$FetchNewFilmsEventImpl) _then)
+class __$$FetchTop10ImplCopyWithImpl<$Res>
+    extends _$Top10EventCopyWithImpl<$Res, _$FetchTop10Impl>
+    implements _$$FetchTop10ImplCopyWith<$Res> {
+  __$$FetchTop10ImplCopyWithImpl(
+      _$FetchTop10Impl _value, $Res Function(_$FetchTop10Impl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$FetchNewFilmsEventImpl implements FetchNewFilmsEvent {
-  const _$FetchNewFilmsEventImpl();
+class _$FetchTop10Impl implements FetchTop10 {
+  const _$FetchTop10Impl();
 
-  factory _$FetchNewFilmsEventImpl.fromJson(Map<String, dynamic> json) =>
-      _$$FetchNewFilmsEventImplFromJson(json);
+  factory _$FetchTop10Impl.fromJson(Map<String, dynamic> json) =>
+      _$$FetchTop10ImplFromJson(json);
 
   @override
   String toString() {
-    return 'MoviesEvent.loadNewFilms()';
+    return 'Top10Event.loadTop10()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$FetchNewFilmsEventImpl);
+        (other.runtimeType == runtimeType && other is _$FetchTop10Impl);
   }
 
   @JsonKey(ignore: true)
@@ -115,27 +115,27 @@ class _$FetchNewFilmsEventImpl implements FetchNewFilmsEvent {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() loadNewFilms,
+    required TResult Function() loadTop10,
   }) {
-    return loadNewFilms();
+    return loadTop10();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? loadNewFilms,
+    TResult? Function()? loadTop10,
   }) {
-    return loadNewFilms?.call();
+    return loadTop10?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? loadNewFilms,
+    TResult Function()? loadTop10,
     required TResult orElse(),
   }) {
-    if (loadNewFilms != null) {
-      return loadNewFilms();
+    if (loadTop10 != null) {
+      return loadTop10();
     }
     return orElse();
   }
@@ -143,42 +143,42 @@ class _$FetchNewFilmsEventImpl implements FetchNewFilmsEvent {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(FetchNewFilmsEvent value) loadNewFilms,
+    required TResult Function(FetchTop10 value) loadTop10,
   }) {
-    return loadNewFilms(this);
+    return loadTop10(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(FetchNewFilmsEvent value)? loadNewFilms,
+    TResult? Function(FetchTop10 value)? loadTop10,
   }) {
-    return loadNewFilms?.call(this);
+    return loadTop10?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(FetchNewFilmsEvent value)? loadNewFilms,
+    TResult Function(FetchTop10 value)? loadTop10,
     required TResult orElse(),
   }) {
-    if (loadNewFilms != null) {
-      return loadNewFilms(this);
+    if (loadTop10 != null) {
+      return loadTop10(this);
     }
     return orElse();
   }
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$FetchNewFilmsEventImplToJson(
+    return _$$FetchTop10ImplToJson(
       this,
     );
   }
 }
 
-abstract class FetchNewFilmsEvent implements MoviesEvent {
-  const factory FetchNewFilmsEvent() = _$FetchNewFilmsEventImpl;
+abstract class FetchTop10 implements Top10Event {
+  const factory FetchTop10() = _$FetchTop10Impl;
 
-  factory FetchNewFilmsEvent.fromJson(Map<String, dynamic> json) =
-      _$FetchNewFilmsEventImpl.fromJson;
+  factory FetchTop10.fromJson(Map<String, dynamic> json) =
+      _$FetchTop10Impl.fromJson;
 }

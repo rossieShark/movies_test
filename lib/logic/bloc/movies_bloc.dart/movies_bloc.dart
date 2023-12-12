@@ -8,21 +8,12 @@ class MoviesBloc extends Bloc<MoviesEvent, MoviesState> {
 
   MoviesBloc(this.repository) : super(const MoviesState.loading()) {
     on<FetchNewFilmsEvent>(onFetchMovies);
-    on<FetchTop10>(onFetchTop10);
+    // on<FetchTop10>(onFetchTop10);
   }
 
   void onFetchMovies(
       FetchNewFilmsEvent event, Emitter<MoviesState> emit) async {
     final movies = await repository.returnMoviesWithCategory('Новинки');
-    if (movies.isEmpty) {
-      emit(const MoviesState.noResults());
-      return;
-    }
-    emit(MoviesState.loaded(data: movies));
-  }
-
-  void onFetchTop10(FetchTop10 event, Emitter<MoviesState> emit) async {
-    final movies = await repository.recentlyWatched();
     if (movies.isEmpty) {
       emit(const MoviesState.noResults());
       return;
